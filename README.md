@@ -20,6 +20,7 @@ Just Another Helm Charts repo.
 | --        | --                          |
 
 ## Usage
+Example:
 ```
 $ helm repo add dougsland https://dougsland.github.io/helm-charts  
 $ helm search repo speedtest  

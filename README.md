@@ -1,6 +1,15 @@
 # helm-charts
 Just Another Helm Charts repo.
 
+Supported charts:
+
+| Chart     | Based on Image              |
+|-----------|-----------------------------|
+| speedtest | adolfintel/speedtest:latest |
+| --        | --                          |
+| --        | --                          |
+| --        | --                          |
+
 ## Usage
 ```
 $ helm repo add dougsland https://dougsland.github.io/helm-charts  

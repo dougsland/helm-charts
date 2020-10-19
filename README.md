@@ -1,13 +1,14 @@
 # helm-charts
-Just Another Helm Charts repo.
-
 - [helm-charts](#helm-charts)
+  * [About](#About)
   * [Supported Charts](#supported-charts)
   * [Usage](#usage)
   * [Uninstall](#uninstall)
     + [repo](#repo)
     + [Uninstall chart](#uninstall-chart)
 
+## About
+Just Another Helm Charts repo.
 
 ## Supported charts:
 

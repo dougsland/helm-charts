@@ -5,7 +5,7 @@ Supported charts:
 
 | Chart     | Based on Image              |
 |-----------|-----------------------------|
-| speedtest | adolfintel/speedtest:latest |
+| speedtest | [adolfintel/speedtest:latest](https://hub.docker.com/r/adolfintel/speedtest) |
 | --        | --                          |
 | --        | --                          |
 | --        | --                          |

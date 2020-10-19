@@ -12,6 +12,17 @@ $ helm install \
     --set ingressroute.hosts=speedtest.medogz.com \
     --set ingressroute.tls=true \
     --set ingressroute.tls=tls-traefikv2
+
+## Uninstall
+### repo
+```
+$ helm repo remove dougsland
+```
+### Uninstall chart
+Example:
+```
+$ helm uninstall speedtest
+```
 ```
 ## Devel
 ### Creating the repo

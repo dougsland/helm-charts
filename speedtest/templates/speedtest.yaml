@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.container.name }}
+  labels:
+    app: {{ .Values.container.name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.container.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.container.name }}
+    spec:
+      containers:
+      - name: {{ .Values.container.name }}
+        image: {{ .Values.container.image }}
+        imagePullPolicy: {{ .Values.container.imagePullPolicy }}
+        resources:
+          limits:
+            memory: {{ .Values.resources.requests.memory | quote }}
+            cpu: {{ .Values.resources.requests.cpu | quote }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.service.name }}
+spec:
+  ports:
+    - name: {{ .Values.service.ports.name }}
+      targetPort: {{ .Values.service.ports.targetPort }}
+      port: {{ .Values.service.ports.port }}
+  selector:
+    app: {{ .Values.service.selector.app }}
+---
+{{- if .Values.ingressroute.enabled -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ .Values.ingressroute.name }}
+spec:
+  entryPoints:
+    - {{ .Values.ingressroute.entryPoints }}
+  routes:
+    - match: Host(`{{ .Values.ingressroute.hosts }}`)
+      kind: Rule
+      services:
+      - name: {{ .Values.service.name }} 
+        port: {{ .Values.service.ports.port }}
+  {{- if .Values.ingressroute.tls}}
+  tls:
+     secretName: {{ .Values.ingressroute.tls }}
+  {{- end -}}
+{{- end -}}

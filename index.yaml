@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  speedtest:
+  - apiVersion: v1
+    created: "2020-10-18T22:28:14.465239091-04:00"
+    description: A Helm chart for speedtest-go
+    digest: e4d326ba1942d5829945c2d988600235a22a29f0a0772e59e0127c0469c4f163
+    name: speedtest
+    sources:
+    - https://github.com/librespeed/speedtest-go
+    urls:
+    - speedtest-1.1.1.tgz
+    version: 1.1.1
+generated: "2020-10-18T22:28:14.461865888-04:00"

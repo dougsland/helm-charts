@@ -1,0 +1,27 @@
+container:
+  name: speedtest
+  port: 80
+  image: adolfintel/speedtest:latest
+  imagePullPolicy: Always
+replicas: 1
+
+resources:
+  requests:
+    memory: 512Mi
+    cpu: 100m
+
+service:
+  name: speedtest
+  ports:
+    name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: speedtest
+
+ingressroute:
+  name: speedtest-https
+  entryPoints: websecure
+  hosts:
+    - speedtest.medogz.com
+  tls: tls-traefikv2

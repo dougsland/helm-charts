@@ -1,5 +1,5 @@
-# helm-charts
-- [helm-charts](#helm-charts)
+# Welcome
+- [Welcome](#welcome)
   * [About](#About)
   * [Supported Charts](#supported-charts)
   * [Usage](#usage)

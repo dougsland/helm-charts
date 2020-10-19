@@ -3,6 +3,7 @@
   * [About](#About)
   * [Supported Charts](#supported-charts)
   * [Usage](#usage)
+  * [Upgrade](#upgrade)
   * [Uninstall](#uninstall)
     + [repo](#repo)
     + [Uninstall chart](#uninstall-chart)
@@ -32,6 +33,12 @@ $ helm install \
     --set ingressroute.tls=true \
     --set ingressroute.tls=tls-traefikv2
 ```
+
+## Upgrade
+```
+$ helm upgrade speedtest dougsland/speedtest
+```
+
 ## Uninstall
 ### repo
 ```

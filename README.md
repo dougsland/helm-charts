@@ -23,7 +23,6 @@ Example:
 ```
 $ helm uninstall speedtest
 ```
-```
 ## Devel
 ### Creating the repo
 1. Create the helm charts and repo  

@@ -6,7 +6,7 @@ Just Another Helm Charts repo.
 $ helm repo add dougsland https://dougsland.github.io/helm-charts  
 $ helm search repo speedtest  
 $ helm install \
-    speedtest \ 
+    speedtest \
     speedtest \
     --set ingressroute.enabled=True \
     --set ingressroute.hosts=speedtest.medogz.com \

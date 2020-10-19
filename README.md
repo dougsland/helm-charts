@@ -12,7 +12,7 @@ $ helm install \
     --set ingressroute.hosts=speedtest.medogz.com \
     --set ingressroute.tls=true \
     --set ingressroute.tls=tls-traefikv2
-
+```
 ## Uninstall
 ### repo
 ```

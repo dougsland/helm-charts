@@ -5,13 +5,13 @@ Just Another Helm Charts repo.
 ```
 $ helm repo add dougsland https://dougsland.github.io/helm-charts  
 $ helm search repo speedtest  
-$ helm install \  
-    speedtest \  
-    speedtest \  
-    --set ingressroute.enabled=True \  
-    --set ingressroute.hosts=speedtest.medogz.com \  
-    --set ingressroute.tls=true \  
-    --set ingressroute.tls=tls-traefikv2  
+$ helm install \
+    speedtest \ 
+    speedtest \
+    --set ingressroute.enabled=True \
+    --set ingressroute.hosts=speedtest.medogz.com \
+    --set ingressroute.tls=true \
+    --set ingressroute.tls=tls-traefikv2
 ```
 ## Devel
 ### Creating the repo

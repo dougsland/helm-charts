@@ -1,7 +1,15 @@
 # helm-charts
 Just Another Helm Charts repo.
 
-Supported charts:
+- [helm-charts](#helm-charts)
+  * [Supported Charts](#supported-charts)
+  * [Usage](#usage)
+  * [Uninstall](#uninstall)
+    + [repo](#repo)
+    + [Uninstall chart](#uninstall-chart)
+
+
+## Supported charts:
 
 | Chart     | Based on Image              |
 |-----------|-----------------------------|

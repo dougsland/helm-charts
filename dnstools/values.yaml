@@ -5,6 +5,7 @@ container:
 replicas: 1
 
 strategy:
+  name: rollingUpdate
   type: RollingUpdate
   maxSurge: 25%
   maxUnavailable: 25%

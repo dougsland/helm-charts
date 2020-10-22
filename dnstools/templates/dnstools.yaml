@@ -10,7 +10,7 @@ spec:
     {{ .Values.strategy.name }}:
       maxSurge: {{ .Values.strategy.maxSurge }}
       maxUnavailable: {{ .Values.strategy.maxUnavailable }}
-    type: {{ .Values.strategy.type }}
+    type: {{ .Values.strategy.type | quote }}
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
@@ -28,5 +28,5 @@ spec:
           args: ["-c", "while true; do echo hello; sleep 10;done"]
           resources:
             limits:
-              memory: {{ .Values.resources.requests.memory }}
-              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory | quote }}
+              cpu: {{ .Values.resources.requests.cpu | quote }}

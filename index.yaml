@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   dnstools:
   - apiVersion: v1
-    created: "2020-10-21T23:08:12.57888567-04:00"
+    created: "2020-10-21T23:19:18.37901438-04:00"
     description: A Helm chart for dnstools
-    digest: 2ca6dec7781a7b6e222794794a9076224c18ce4e4f27f2909b893e0f5a60934d
+    digest: f67ca9f8b6e4e3c3af9a92a151e740f5804c4e5db38eea514d6298e28de97623
     name: dnstools
     sources:
     - https://github.com/infobloxopen/dnstools
@@ -13,7 +13,7 @@ entries:
     version: v3
   speedtest:
   - apiVersion: v1
-    created: "2020-10-21T23:08:12.579116826-04:00"
+    created: "2020-10-21T23:19:18.379311433-04:00"
     description: A Helm chart for speedtest-go
     digest: dadf1cc8a409aa60e542021a9372de527a3d7c8b6093410d231f1aa09bfa6413
     name: speedtest
@@ -22,4 +22,4 @@ entries:
     urls:
     - speedtest-5.2.2.tgz
     version: 5.2.2
-generated: "2020-10-21T23:08:12.578556157-04:00"
+generated: "2020-10-21T23:19:18.3785599-04:00"

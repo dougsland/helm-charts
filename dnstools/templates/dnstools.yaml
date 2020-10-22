@@ -7,10 +7,10 @@ metadata:
 spec:
   progressDeadlineSeconds: {{ .Values.container.progressDeadlineSeconds }}
   strategy:
-    {{ .Values.strategy.type}}:
+    {{ .Values.strategy.type }}:
       maxSurge: {{ .Values.strategy.maxSurge }}
       maxUnavailable: {{ .Values.strategy.maxUnavailable }}
-    type: 
+    type: {{ .Values.strategy.type }}
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:

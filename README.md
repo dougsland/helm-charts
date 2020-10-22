@@ -16,7 +16,7 @@ Just Another Helm Charts repo.
 | Chart     | Based on Image              |
 |-----------|-----------------------------|
 | speedtest | [adolfintel/speedtest:latest](https://hub.docker.com/r/adolfintel/speedtest) |
-| --        | --                          |
+| dnstools  | [infoblox/dnstools:latest](https://hub.docker.com/r/infoblox/dnstools) |
 | --        | --                          |
 | --        | --                          |
 

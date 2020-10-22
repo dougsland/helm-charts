@@ -1,0 +1,18 @@
+container:
+  name: dnstools
+  progressDeadlineSeconds: 60
+  image: infoblox/dnstools:latest
+replicas: 1
+
+strategy:
+  type: RollingUpdate
+  maxSurge: 25%
+  maxUnavailable: 25%
+
+resources:
+  requests:
+    memory: 256Mi
+    cpu: 80m
+
+selector:
+  app: dnstools
